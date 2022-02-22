@@ -38,5 +38,15 @@ function kiertekeles()
     else{
         pontok+=0;
     }
-    alert(pontok)
+
+    var kettes = document.getElementById("magassag");
+    if(kettes.value==1014){
+        pontok+=1
+    }
+    else{
+        pontok+=0;
+    }
+
+    ki.innerHTML = "Össz pontszám: "+pontok;
+    console.log(pontok)
 }
